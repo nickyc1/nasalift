@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nasalift — The nasal strip that actually stays on</title>
+<meta name="description" content="Nasalift is the nasal strip that actually stays on. Day or night, through sweat and sleep, then it peels off clean by morning. Boob-tape-grade adhesive, magnetic lift, skin-friendly. Join the waitlist.">
+<link rel="canonical" href="https://nasalift.com/">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Nasalift — The nasal strip that actually stays on">
+<meta property="og:description" content="Day or night. Through sweat and sleep. Then it peels off clean by morning.">
+<meta property="og:url" content="https://nasalift.com/">
+<meta property="og:image" content="https://nasalift.com/images/hero-sleep.jpg">
+<meta property="og:site_name" content="Nasalift">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#fbfaf7; --ink:#17150f; --soft:#6c685f; --faint:#9a958a;
+    --line:#e9e3d8; --surface:#ffffff; --cream:#f3efe6;
+    --accent:#15463a; --accent-press:#0f342a; --accent-soft:#e6efe9;
+    --r:14px; --ease:cubic-bezier(.16,1,.3,1);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font-family:Inter,-apple-system,system-ui,sans-serif;line-height:1.55;
+       font-size:17px;-webkit-font-smoothing:antialiased;letter-spacing:-.005em}
+  h1,h2,h3,.tight{font-family:"Inter Tight",Inter,system-ui,sans-serif;font-weight:600;line-height:1.04;letter-spacing:-.03em;margin:0}
+  p{margin:0}
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
+  .wrap{width:100%;max-width:1120px;margin:0 auto;padding:0 24px}
+  .measure{max-width:640px}
+
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);
+       color:#fff;font-weight:600;font-size:16px;padding:14px 26px;border-radius:12px;border:0;cursor:pointer;
+       font-family:inherit;transition:background .2s var(--ease),transform .2s var(--ease)}
+  .btn:hover{background:var(--accent-press)}
+  .btn:active{transform:translateY(1px)}
+  .btn:focus-visible{outline:3px solid var(--accent-soft);outline-offset:2px}
+
+  /* Header */
+  header{position:sticky;top:0;z-index:50;background:rgba(251,250,247,.82);backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+  .word{font-family:"Inter Tight";font-weight:700;font-size:22px;letter-spacing:-.04em;display:flex;align-items:center;gap:9px}
+  .word .dot{width:11px;height:11px;border-radius:50%;background:var(--accent)}
+  .nav .btn{padding:9px 18px;font-size:14px;border-radius:10px}
+
+  /* Hero */
+  .hero{padding:clamp(64px,11vw,128px) 0 clamp(40px,6vw,72px);text-align:center}
+  .hero h1{font-size:clamp(42px,7.6vw,82px);max-width:16ch;margin:0 auto}
+  .hero .sub{font-size:clamp(18px,2.3vw,22px);color:var(--soft);max-width:30ch;margin:24px auto 0;line-height:1.4;letter-spacing:-.01em}
+  .signup{display:flex;gap:10px;max-width:440px;margin:36px auto 0;flex-wrap:wrap;justify-content:center}
+  .signup input{flex:1;min-width:230px;height:52px;padding:0 18px;border:1px solid #ddd6c8;border-radius:12px;
+       background:var(--surface);font-size:16px;font-family:inherit;color:var(--ink)}
+  .signup input::placeholder{color:var(--faint)}
+  .signup input:focus{outline:none;border-color:var(--accent)}
+  .signup .btn{height:52px}
+  .finenote{font-size:13.5px;color:var(--faint);margin-top:14px}
+  .msg{font-size:14.5px;font-weight:600;color:var(--accent);margin-top:14px;min-height:1.1em}
+
+  .heroshot{margin-top:clamp(40px,6vw,72px);width:100%;height:clamp(360px,58vw,640px);overflow:hidden}
+  .heroshot img{width:100%;height:100%;object-fit:cover;object-position:center 38%}
+
+  /* Statement */
+  .statement{padding:clamp(80px,12vw,150px) 0;text-align:center}
+  .statement h2{font-size:clamp(32px,5.4vw,60px);max-width:18ch;margin:0 auto}
+  .statement .lead{font-size:clamp(17px,2vw,20px);color:var(--soft);max-width:52ch;margin:26px auto 0;line-height:1.5}
+  .statement .accent{color:var(--accent)}
+
+  /* Split */
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,72px);align-items:center;padding:clamp(48px,7vw,90px) 0}
+  @media(max-width:840px){.split{grid-template-columns:1fr;gap:32px}}
+  .split .shot{border-radius:20px;overflow:hidden;aspect-ratio:4/5}
+  .split .shot img{width:100%;height:100%;object-fit:cover}
+  .split h2{font-size:clamp(28px,4.2vw,46px);max-width:14ch}
+  .split p{color:var(--soft);font-size:18px;margin-top:20px;line-height:1.55}
+
+  /* Pillars */
+  .pillars{padding:clamp(48px,7vw,96px) 0;border-top:1px solid var(--line)}
+  .pillars-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,4vw,56px);margin-top:8px}
+  @media(max-width:760px){.pillars-grid{grid-template-columns:1fr;gap:40px}}
+  .pillar .rule{width:34px;height:2px;background:var(--accent);margin-bottom:20px}
+  .pillar h3{font-size:23px;letter-spacing:-.02em}
+  .pillar p{color:var(--soft);margin-top:10px;font-size:16px;line-height:1.55}
+
+  /* How */
+  .how{padding:clamp(56px,8vw,110px) 0;background:var(--cream);border-radius:28px;margin:clamp(24px,4vw,40px) 0}
+  .how .inner{max-width:1120px;margin:0 auto;padding:0 clamp(24px,5vw,56px)}
+  .how h2{font-size:clamp(28px,4.4vw,48px);max-width:16ch}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,3vw,40px);margin-top:48px}
+  @media(max-width:760px){.steps{grid-template-columns:1fr;gap:34px}}
+  .step .num{font-family:"Inter Tight";font-weight:600;font-size:15px;color:var(--accent);letter-spacing:.02em}
+  .step h3{font-size:20px;margin-top:14px;letter-spacing:-.02em}
+  .step p{color:var(--soft);margin-top:8px;font-size:15.5px;line-height:1.55}
+
+  /* Made for */
+  .madefor{padding:clamp(56px,8vw,100px) 0;text-align:center}
+  .madefor h2{font-size:clamp(28px,4.4vw,48px);max-width:18ch;margin:0 auto}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:32px}
+  .chips span{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:10px 18px;font-size:15px;font-weight:500;color:var(--ink)}
+
+  /* Story */
+  .story{padding:clamp(40px,6vw,80px) 0}
+  .story .card{max-width:760px;margin:0 auto;text-align:center}
+  .story p{font-size:clamp(19px,2.4vw,26px);line-height:1.45;letter-spacing:-.015em;font-family:"Inter Tight";font-weight:500}
+  .story p+p{margin-top:18px;font-size:17px;font-family:Inter;font-weight:400;color:var(--soft);letter-spacing:-.005em;line-height:1.55}
+  .story a{color:var(--accent);font-weight:600}
+
+  /* Final CTA */
+  .final{background:var(--accent);color:#fff;border-radius:28px;padding:clamp(56px,9vw,120px) 24px;text-align:center;margin:clamp(40px,6vw,80px) 0}
+  .final h2{font-size:clamp(32px,5.4vw,60px);max-width:16ch;margin:0 auto;color:#fff}
+  .final p{color:#bcdacf;max-width:44ch;margin:20px auto 0;font-size:18px}
+  .final .signup{margin-top:34px}
+  .final .signup input{background:#fff;border-color:transparent}
+  .final .btn{background:#fff;color:var(--accent)}
+  .final .btn:hover{background:#eef6f1}
+
+  footer{border-top:1px solid var(--line);padding:40px 0 64px;color:var(--soft);font-size:14px}
+  .footrow{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+  .disclaimer{font-size:12.5px;color:var(--faint);max-width:62ch;margin-top:14px;line-height:1.5}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="./" class="word"><span class="dot"></span>Nasalift</a>
+    <a href="#waitlist" class="btn">Join the waitlist</a>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <h1>The nasal strip that actually stays on.</h1>
+      <p class="sub">Day or night, through sweat and sleep. Then it peels off clean by morning.</p>
+      <form class="signup" id="su-top" method="POST" action="https://formspree.io/f/REPLACE_WITH_FORM_ID">
+        <input type="email" name="email" required placeholder="Your email" aria-label="Email">
+        <button class="btn" type="submit">Get early access</button>
+      </form>
+      <div class="msg" id="msg-top" role="status"></div>
+      <p class="finenote">Join the waitlist for first access and a launch-day discount.</p>
+    </div>
+    <div class="heroshot">
+      <img src="images/hero-sleep.jpg" alt="A man sleeping calmly, breathing through his nose with a Nasalift strip on" loading="eager">
+    </div>
+  </section>
+
+  <!-- STATEMENT -->
+  <section class="statement">
+    <div class="wrap">
+      <h2>Every nasal strip has the same flaw.<br><span class="accent">It falls off.</span></h2>
+      <p class="lead">The adhesive quits the moment you sweat, roll over, or have slightly oily skin. We bought and tested every strip and dilator on the market and hit that same wall every time. So we started over at the one part nobody gets right.</p>
+    </div>
+  </section>
+
+  <!-- SPLIT: performance -->
+  <section class="wrap">
+    <div class="split">
+      <div class="shot"><img src="images/athlete.jpg" alt="A runner breathing through her nose on a trail, wearing a Nasalift strip"></div>
+      <div>
+        <h2>Made to move with you.</h2>
+        <p>We build it on boob-tape-grade medical adhesive, the kind engineered to hold body tissue through sweat and heat. Holding a nasal strip in place is the easy part. It stays put on the trail, in bed, and everywhere in between.</p>
+        <p>Strong going on. Gentle and clean coming off.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PILLARS -->
+  <section class="pillars">
+    <div class="wrap pillars-grid">
+      <div class="pillar"><div class="rule"></div><h3>Stays on all night</h3><p>Medical adhesive that survives sweat, humidity, and a full night of moving around. Wake up with it still on your nose, not your pillow.</p></div>
+      <div class="pillar"><div class="rule"></div><h3>Kind to your skin</h3><p>Latex-free and hypoallergenic, gentle enough to wear over your nighttime routine, and clean to peel off in the morning.</p></div>
+      <div class="pillar"><div class="rule"></div><h3>Day or night</h3><p>Comfortable enough to wear past the alarm. Better airflow for sleep, training, or a stuffy commute, whenever you need it.</p></div>
+    </div>
+  </section>
+
+  <!-- HOW -->
+  <section class="wrap">
+    <div class="how"><div class="inner">
+      <h2>A magnetic lift that opens your nose.</h2>
+      <div class="steps">
+        <div class="step"><div class="num">01</div><h3>Stick the tabs</h3><p>Two slim, skin-friendly tabs sit just beside each nostril. Clean, dry, press for ten seconds.</p></div>
+        <div class="step"><div class="num">02</div><h3>Snap on the band</h3><p>The reusable magnetic band clicks onto the tabs and gently lifts the sides of your nose open. No pressure on the bridge.</p></div>
+        <div class="step"><div class="num">03</div><h3>Breathe, all night</h3><p>The lift holds, the adhesive holds. In the morning the tabs peel off clean. Reuse the band, replace the tabs.</p></div>
+      </div>
+    </div></div>
+  </section>
+
+  <!-- MADE FOR -->
+  <section class="madefor">
+    <div class="wrap">
+      <h2>If you breathe, it's for you.</h2>
+      <div class="chips">
+        <span>People who snore</span>
+        <span>Mouth-breathers</span>
+        <span>Runners and athletes</span>
+        <span>Allergy and congestion</span>
+        <span>CPAP users</span>
+        <span>Anyone optimizing sleep</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="story">
+    <div class="wrap"><div class="card">
+      <p>We tested every nasal strip and dilator we could find. They all improved airflow. They all had the same flaw.</p>
+      <p>Nobody had built one that simply stays on, comfortably, all night and into the day. So we are. It comes from the team behind <a href="https://bestnasalstrips.com">Best Nasal Strips</a>, where we put our name on what actually works.</p>
+    </div></div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section id="waitlist" class="wrap">
+    <div class="final">
+      <h2>Be first to breathe easy.</h2>
+      <p>Join the waitlist for early access and a launch-day discount. One email when it's ready, nothing else.</p>
+      <form class="signup" id="su-bot" method="POST" action="https://formspree.io/f/REPLACE_WITH_FORM_ID">
+        <input type="email" name="email" required placeholder="Your email" aria-label="Email">
+        <button class="btn" type="submit">Join the waitlist</button>
+      </form>
+      <div class="msg" id="msg-bot" role="status" style="color:#bcdacf"></div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footrow">
+    <div>
+      <div class="word" style="font-size:19px"><span class="dot"></span>Nasalift</div>
+      <div style="margin-top:8px">The nasal strip that actually stays on.</div>
+    </div>
+    <div style="max-width:44ch">
+      Nasalift is a drug-free breathing aid in development, not a medical device or a treatment for sleep apnea. See a doctor about persistent snoring or breathing problems during sleep.
+      <div class="disclaimer">© 2026 Nasalift by BreatheLab. Coming soon.</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  ['top','bot'].forEach(function(id){
+    var form=document.getElementById('su-'+id), msg=document.getElementById('msg-'+id);
+    if(!form) return;
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      var action=form.getAttribute('action');
+      if(action.indexOf('REPLACE_WITH_FORM_ID')!==-1){ msg.textContent="Thanks. The waitlist opens in a moment, check back soon."; return; }
+      var data=new FormData(form); msg.textContent='Adding you...';
+      fetch(action,{method:'POST',body:data,headers:{'Accept':'application/json'}})
+        .then(function(r){ msg.textContent=r.ok?"You're on the list. We'll be in touch.":"That didn't go through, try again?"; if(r.ok) form.reset(); })
+        .catch(function(){ msg.textContent='Network hiccup, try again in a sec.'; });
+    });
+  });
+})();
+</script>
+</body>
+</html>
