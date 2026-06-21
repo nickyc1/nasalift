@@ -3,24 +3,35 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nasalift — The breathable, silicone-free nasal strip</title>
-<meta name="description" content="Nasalift is the breathable, skin-friendly nasal strip. The only thing on your skin is soft fabric, never silicone or a plastic film. A gentle magnetic lift opens your nose and stays put all night. Join the waitlist.">
-<link rel="canonical" href="https://nasalift.com/">
+<title>SanoSleep — The nasal strip built for deep sleep</title>
+<meta name="description" content="SanoSleep gently opens your nose wider than a strip and holds all night. Skin-friendly, safe to wear a full twelve hours, and it goes on right over your nighttime skincare. Join the waitlist.">
+<link rel="canonical" href="https://sanosleep.co/">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Nasalift — The breathable, silicone-free nasal strip">
-<meta property="og:description" content="Breathable fabric on your skin. Never silicone, never a plastic film. A gentle magnetic lift opens your nose all night.">
-<meta property="og:url" content="https://nasalift.com/">
-<meta property="og:image" content="https://nasalift.com/images/hero-sleep.jpg">
-<meta property="og:site_name" content="Nasalift">
+<meta property="og:title" content="SanoSleep — The nasal strip built for deep sleep">
+<meta property="og:description" content="Opens your nose wider than a strip and holds all night. Skin-friendly, safe for a full twelve hours, and it goes on right over your skincare.">
+<meta property="og:url" content="https://sanosleep.co/">
+<meta property="og:image" content="https://sanosleep.co/images/deep-sleep.jpg">
+<meta property="og:site_name" content="SanoSleep">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "SanoSleep",
+  "url": "https://sanosleep.co/",
+  "logo": "https://sanosleep.co/images/deep-sleep.jpg",
+  "description": "SanoSleep is a skin-friendly nasal strip built for deep sleep. It gently opens your nose wider than a flat strip, is safe to wear a full twelve hours, and goes on right over your nighttime skincare routine.",
+  "slogan": "The nasal strip built for deep sleep."
+}
+</script>
 <style>
   :root{
-    --bg:#fbfaf7; --ink:#17150f; --soft:#6c685f; --faint:#9a958a;
-    --line:#e9e3d8; --surface:#ffffff; --cream:#f3efe6;
-    --accent:#15463a; --accent-press:#0f342a; --accent-soft:#e6efe9;
+    --bg:#faf8f3; --ink:#14161d; --soft:#5d626f; --faint:#9a9aa6;
+    --line:#e9e3d6; --surface:#ffffff; --cream:#f1ece0;
+    --accent:#212c4d; --accent-press:#161f3a; --accent-soft:#e6e9f2;
     --r:14px; --ease:cubic-bezier(.16,1,.3,1);
   }
   *{box-sizing:border-box}
@@ -43,7 +54,7 @@
   .btn:focus-visible{outline:3px solid var(--accent-soft);outline-offset:2px}
 
   /* Header */
-  header{position:sticky;top:0;z-index:50;background:rgba(251,250,247,.82);backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid var(--line)}
+  header{position:sticky;top:0;z-index:50;background:rgba(250,248,243,.82);backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid var(--line)}
   .nav{display:flex;align-items:center;justify-content:space-between;height:66px}
   .word{font-family:"Inter Tight";font-weight:700;font-size:22px;letter-spacing:-.04em;display:flex;align-items:center;gap:9px}
   .word .dot{width:11px;height:11px;border-radius:50%;background:var(--accent)}
@@ -51,8 +62,8 @@
 
   /* Hero */
   .hero{padding:clamp(64px,11vw,128px) 0 clamp(40px,6vw,72px);text-align:center}
-  .hero h1{font-size:clamp(42px,7.6vw,82px);max-width:16ch;margin:0 auto}
-  .hero .sub{font-size:clamp(18px,2.3vw,22px);color:var(--soft);max-width:30ch;margin:24px auto 0;line-height:1.4;letter-spacing:-.01em}
+  .hero h1{font-size:clamp(42px,7.6vw,82px);max-width:15ch;margin:0 auto}
+  .hero .sub{font-size:clamp(18px,2.3vw,22px);color:var(--soft);max-width:33ch;margin:24px auto 0;line-height:1.42;letter-spacing:-.01em}
   .signup{display:flex;gap:10px;max-width:440px;margin:36px auto 0;flex-wrap:wrap;justify-content:center}
   .signup input{flex:1;min-width:230px;height:52px;padding:0 18px;border:1px solid #ddd6c8;border-radius:12px;
        background:var(--surface);font-size:16px;font-family:inherit;color:var(--ink)}
@@ -63,12 +74,12 @@
   .msg{font-size:14.5px;font-weight:600;color:var(--accent);margin-top:14px;min-height:1.1em}
 
   .heroshot{margin-top:clamp(40px,6vw,72px);width:100%;height:clamp(360px,58vw,640px);overflow:hidden}
-  .heroshot img{width:100%;height:100%;object-fit:cover;object-position:center 38%}
+  .heroshot img{width:100%;height:100%;object-fit:cover;object-position:center 42%}
 
   /* Statement */
   .statement{padding:clamp(80px,12vw,150px) 0;text-align:center}
-  .statement h2{font-size:clamp(32px,5.4vw,60px);max-width:18ch;margin:0 auto}
-  .statement .lead{font-size:clamp(17px,2vw,20px);color:var(--soft);max-width:52ch;margin:26px auto 0;line-height:1.5}
+  .statement h2{font-size:clamp(32px,5.4vw,60px);max-width:16ch;margin:0 auto}
+  .statement .lead{font-size:clamp(17px,2vw,20px);color:var(--soft);max-width:54ch;margin:26px auto 0;line-height:1.5}
   .statement .accent{color:var(--accent)}
 
   /* Split */
@@ -113,11 +124,11 @@
   /* Final CTA */
   .final{background:var(--accent);color:#fff;border-radius:28px;padding:clamp(56px,9vw,120px) 24px;text-align:center;margin:clamp(40px,6vw,80px) 0}
   .final h2{font-size:clamp(32px,5.4vw,60px);max-width:16ch;margin:0 auto;color:#fff}
-  .final p{color:#bcdacf;max-width:44ch;margin:20px auto 0;font-size:18px}
+  .final p{color:#b9c0d8;max-width:44ch;margin:20px auto 0;font-size:18px}
   .final .signup{margin-top:34px}
   .final .signup input{background:#fff;border-color:transparent}
   .final .btn{background:#fff;color:var(--accent)}
-  .final .btn:hover{background:#eef6f1}
+  .final .btn:hover{background:#eef0f7}
 
   footer{border-top:1px solid var(--line);padding:40px 0 64px;color:var(--soft);font-size:14px}
   .footrow{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
@@ -128,7 +139,7 @@
 
 <header>
   <div class="wrap nav">
-    <a href="./" class="word"><span class="dot"></span>Nasalift</a>
+    <a href="./" class="word"><span class="dot"></span>SanoSleep</a>
     <a href="#waitlist" class="btn">Join the waitlist</a>
   </div>
 </header>
@@ -137,8 +148,8 @@
   <!-- HERO -->
   <section class="hero">
     <div class="wrap">
-      <h1>Breathable. Skin-friendly. Never silicone.</h1>
-      <p class="sub">A gentle magnetic lift opens your nose, and the only thing on your skin is soft, breathable fabric. No silicone, no plastic film. It stays put all night, then peels off clean.</p>
+      <h1>Your deepest sleep starts with a clear nose.</h1>
+      <p class="sub">SanoSleep gently opens your nose wider than a strip and holds all night. Soft on your skin, safe for a full twelve hours, and it goes on right over your nighttime skincare.</p>
       <form class="signup" id="su-top" method="POST" action="https://formspree.io/f/REPLACE_WITH_FORM_ID">
         <input type="email" name="email" required placeholder="Your email" aria-label="Email">
         <button class="btn" type="submit">Get early access</button>
@@ -147,26 +158,26 @@
       <p class="finenote">Join the waitlist for first access and a launch-day discount.</p>
     </div>
     <div class="heroshot">
-      <img src="images/hero-sleep.jpg" alt="A man sleeping calmly, breathing through his nose with a Nasalift strip on" loading="eager">
+      <img src="images/deep-sleep.jpg" alt="A person sleeping deeply and breathing calmly through the nose, wearing a SanoSleep strip" loading="eager">
     </div>
   </section>
 
   <!-- STATEMENT -->
   <section class="statement">
     <div class="wrap">
-      <h2>Everything else is <span class="accent">plastic or silicone.</span></h2>
-      <p class="lead">Drugstore strips press a plastic film against your skin. The new dilators are silicone, sitting inside your nose all night. Nasalift is the third way: a gentle magnetic lift on the outside, and soft, breathable fabric where it actually touches you. No silicone. Nothing up your nose.</p>
+      <h2>Made for sleep. <span class="accent">Not for everything.</span></h2>
+      <p class="lead">Drugstore strips were built for a quick fix and pop off by 2am. The in-nose dilators feel like a tube up your nose. SanoSleep is the one designed around a full night: a gentle lift that opens your nose wider, on skin-safe materials made to stay put until morning.</p>
     </div>
   </section>
 
-  <!-- SPLIT: performance -->
+  <!-- SPLIT: skincare ritual -->
   <section class="wrap">
     <div class="split">
-      <div class="shot"><img src="images/athlete.jpg" alt="A runner breathing through her nose on a trail, wearing a Nasalift strip"></div>
+      <div class="shot"><img src="images/skincare-ritual.jpg" alt="A woman applying a SanoSleep strip as the last step of her nighttime skincare routine"></div>
       <div>
-        <h2>Made to move with you.</h2>
-        <p>We build it on boob-tape-grade medical adhesive, the kind engineered to hold body tissue through sweat and heat. Holding a nasal strip in place is the easy part. It stays put on the trail, in bed, and everywhere in between.</p>
-        <p>Strong going on. Gentle and clean coming off.</p>
+        <h2>The last step of your night.</h2>
+        <p>It goes on right over your skincare, clean serums and moisturizer and all. No greasy fight with your routine, no residue in the morning. Press it on after your last step and climb into bed.</p>
+        <p>Healthy on your skin, every single night.</p>
       </div>
     </div>
   </section>
@@ -174,20 +185,20 @@
   <!-- PILLARS -->
   <section class="pillars">
     <div class="wrap pillars-grid">
-      <div class="pillar"><div class="rule"></div><h3>Breathable fabric, not plastic film</h3><p>The only thing adhering to your skin is soft, breathable fabric. Your skin breathes all night instead of sweating under a plastic film.</p></div>
-      <div class="pillar"><div class="rule"></div><h3>Never silicone</h3><p>No silicone anywhere, and nothing inside your nose. The lift comes from a magnet on the outside, gentle and nearly invisible.</p></div>
-      <div class="pillar"><div class="rule"></div><h3>Skin-friendly, and it stays</h3><p>Latex-free and hypoallergenic. Strong enough to hold through sweat and sleep, gentle enough to peel off clean in the morning.</p></div>
+      <div class="pillar"><div class="rule"></div><h3>Safe for the full night</h3><p>Skin-friendly, latex-free, and gentle enough to wear twelve hours straight. Sano means healthy, and that starts with what touches your skin while you sleep.</p></div>
+      <div class="pillar"><div class="rule"></div><h3>Opens your nose wider</h3><p>A gentle lift pulls the sides of your nose open further than a flat strip can. More air moves with less effort, quietly, all night long.</p></div>
+      <div class="pillar"><div class="rule"></div><h3>Stays put till morning</h3><p>Built on medical-grade adhesive that holds through sweat and tossing. It's still there when you wake up, then peels off clean.</p></div>
     </div>
   </section>
 
   <!-- HOW -->
   <section class="wrap">
     <div class="how"><div class="inner">
-      <h2>A magnetic lift that opens your nose.</h2>
+      <h2>A gentle lift that opens your nose for sleep.</h2>
       <div class="steps">
-        <div class="step"><div class="num">01</div><h3>Stick the tabs</h3><p>Two slim, skin-friendly tabs sit just beside each nostril. Clean, dry, press for ten seconds.</p></div>
-        <div class="step"><div class="num">02</div><h3>Snap on the band</h3><p>The reusable magnetic band clicks onto the tabs and gently lifts the sides of your nose open. No pressure on the bridge.</p></div>
-        <div class="step"><div class="num">03</div><h3>Breathe, all night</h3><p>The lift holds, the adhesive holds. In the morning the tabs peel off clean. Reuse the band, replace the tabs.</p></div>
+        <div class="step"><div class="num">01</div><h3>Add it to your wind-down</h3><p>After your skincare, press the two slim tabs just beside each nostril. Ten seconds, then lights out.</p></div>
+        <div class="step"><div class="num">02</div><h3>Feel your nose open</h3><p>The reusable magnetic band clicks on and gently lifts the sides of your nose open. No pressure on the bridge, nothing inside your nose.</p></div>
+        <div class="step"><div class="num">03</div><h3>Sleep all the way through</h3><p>The lift holds and the adhesive holds, for a full night of quiet, nose-led breathing. Peel the tabs off clean in the morning.</p></div>
       </div>
     </div></div>
   </section>
@@ -195,14 +206,14 @@
   <!-- MADE FOR -->
   <section class="madefor">
     <div class="wrap">
-      <h2>If you breathe, it's for you.</h2>
+      <h2>For anyone who wants a deeper night.</h2>
       <div class="chips">
         <span>People who snore</span>
         <span>Mouth-breathers</span>
-        <span>Runners and athletes</span>
-        <span>Allergy and congestion</span>
+        <span>Stuffy-nose sleepers</span>
+        <span>Allergy season</span>
         <span>CPAP users</span>
-        <span>Anyone optimizing sleep</span>
+        <span>Light sleepers</span>
       </div>
     </div>
   </section>
@@ -210,21 +221,21 @@
   <!-- STORY -->
   <section class="story">
     <div class="wrap"><div class="card">
-      <p>We tested every nasal strip and dilator we could find. They all improved airflow. They all had the same flaw.</p>
-      <p>Nobody had built one that simply stays on, comfortably, all night and into the day. So we are. It comes from the team behind <a href="https://bestnasalstrips.com">Best Nasal Strips</a>, where we put our name on what actually works.</p>
+      <p>Sano means healthy. We started with one question: why does nothing let you breathe well, safely, for a whole night?</p>
+      <p>We tested every strip and dilator we could find. They all opened the nose a little. They all quit early, irritated skin, or felt like a plug. So we built SanoSleep for the full night, on materials clean enough to wear over your skincare. It comes from the team behind <a href="https://bestnasalstrips.com">Best Nasal Strips</a>, where we put our name on what actually works.</p>
     </div></div>
   </section>
 
   <!-- FINAL CTA -->
   <section id="waitlist" class="wrap">
     <div class="final">
-      <h2>Be first to breathe easy.</h2>
+      <h2>Be first to sleep deeper.</h2>
       <p>Join the waitlist for early access and a launch-day discount. One email when it's ready, nothing else.</p>
       <form class="signup" id="su-bot" method="POST" action="https://formspree.io/f/REPLACE_WITH_FORM_ID">
         <input type="email" name="email" required placeholder="Your email" aria-label="Email">
         <button class="btn" type="submit">Join the waitlist</button>
       </form>
-      <div class="msg" id="msg-bot" role="status" style="color:#bcdacf"></div>
+      <div class="msg" id="msg-bot" role="status" style="color:#b9c0d8"></div>
     </div>
   </section>
 </main>
@@ -232,12 +243,12 @@
 <footer>
   <div class="wrap footrow">
     <div>
-      <div class="word" style="font-size:19px"><span class="dot"></span>Nasalift</div>
-      <div style="margin-top:8px">The nasal strip that actually stays on.</div>
+      <div class="word" style="font-size:19px"><span class="dot"></span>SanoSleep</div>
+      <div style="margin-top:8px">The nasal strip built for deep sleep.</div>
     </div>
     <div style="max-width:44ch">
-      Nasalift is a drug-free breathing aid in development, not a medical device or a treatment for sleep apnea. See a doctor about persistent snoring or breathing problems during sleep.
-      <div class="disclaimer">© 2026 Nasalift by BreatheLab. Coming soon.</div>
+      SanoSleep is a drug-free breathing aid in development, not a medical device or a treatment for sleep apnea. See a doctor about persistent snoring or breathing problems during sleep.
+      <div class="disclaimer">© 2026 SanoSleep. Coming soon.</div>
     </div>
   </div>
 </footer>
